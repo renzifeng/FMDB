@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //插入数据,打开此处运行就会插入100条数据
 //    for (int i = 0; i < 100; i++) {
 //        Shop *shop = [[Shop alloc] init];
 //        shop.name = [NSString stringWithFormat:@"手机%d",i];
@@ -29,6 +30,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    //点击空白处查询数据库数据
     NSArray *arr = [ShopTool shops];
     for (Shop *shop in arr) {
         NSLog(@"NAME = %@,PRICE = %f",shop.name,shop.price);
